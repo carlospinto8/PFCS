@@ -1,0 +1,42 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #151515;
+  color: #EAEAEA;
+  border-top: solid #191919;
+
+  .footer-section {
+    padding: 0 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #5E35B1;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

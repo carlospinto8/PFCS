@@ -1,0 +1,24 @@
+<mat-toolbar>PFCS  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with help icon">
+    <mat-icon>help</mat-icon>
+  </button>
+  <!--TODO: conditionally visible when user is logged in-->
+  <button *ngIf="isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with logout icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+  <!--TODO: conditionally visible when user is NOT logged in-->
+  <button *ngIf="!isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with login icon">
+    <mat-icon>login</mat-icon>
+  </button>
+  <!--TODO: conditionally visible when user is logged in-->
+  <button *ngIf="isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with my account icon">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <!--TODO: conditionally visible when user is NOT logged in-->
+  <button *ngIf="!isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with signup icon">
+    <mat-icon>person_add</mat-icon>
+  </button>
+</mat-toolbar>

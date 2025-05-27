@@ -1,0 +1,24 @@
+.mat-toolbar-row, .mat-toolbar-single-row {
+  background-color: #151515;
+  color: #EAEAEA;
+  border-bottom: solid #191919;
+  padding: 0 1rem;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  button:hover {
+    background-color: #252525;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(70, 70, 70, 0.3);
+  }
+
+  button:focus {
+    border-color:#EAEAEA;
+    border: solid 1px;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

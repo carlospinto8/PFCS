@@ -1,18 +1,18 @@
 <mat-toolbar>PFCS  <span class="example-spacer"></span>
   <!--TODO: conditionally visible when user is logged in-->
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with logout icon">
+  <button *ngIf="isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with logout icon">
     <mat-icon>logout</mat-icon>
   </button>
   <!--TODO: conditionally visible when user is NOT logged in-->
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with login icon">
+  <button *ngIf="!isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with login icon">
     <mat-icon>login</mat-icon>
   </button>
   <!--TODO: conditionally visible when user is logged in-->
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with my account icon">
+  <button *ngIf="isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with my account icon">
     <mat-icon>account_circle</mat-icon>
   </button>
   <!--TODO: conditionally visible when user is NOT logged in-->
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with signup icon">
+  <button *ngIf="!isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with signup icon">
     <mat-icon>person_add</mat-icon>
   </button>
 </mat-toolbar>
@@ -27,7 +27,7 @@
         <button mat-raised-button class="hero-button">Get Started</button>
       </div>
       <div class="hero-image">
-        <img src="../../../assets/images/PFCS_Logo.png">
+        <img alt="Company logo depicting a purple cloud with a lock in the center of it" src="../../../assets/images/PFCS_Logo.png">
       </div>
     </section>
 

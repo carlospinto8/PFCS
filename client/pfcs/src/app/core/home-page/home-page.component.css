@@ -6,6 +6,17 @@
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
+
+  button:hover {
+    background-color: #252525;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(70, 70, 70, 0.3);
+  }
+
+  button:focus {
+    border-color:#EAEAEA;
+    border: solid 1px;
+  }
 }
 
 .example-spacer {
@@ -48,6 +59,10 @@
     background-color: #fcc138;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(248, 211, 48, 0.3);
+  }
+
+  .hero-button:focus {
+    box-shadow: 0 8px 12px rgba(241, 232, 189, 0.3);
   }
 }
 

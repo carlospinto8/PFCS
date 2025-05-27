@@ -1,4 +1,10 @@
 <mat-toolbar>PFCS  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with help icon">
+    <mat-icon>help</mat-icon>
+  </button>
   <!--TODO: conditionally visible when user is logged in-->
   <button *ngIf="isUserLoggedIn" mat-icon-button class="example-icon" aria-label="Example icon-button with logout icon">
     <mat-icon>logout</mat-icon>

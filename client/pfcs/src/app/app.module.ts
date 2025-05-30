@@ -8,26 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header/header.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    FooterComponent,
-    HeaderComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatIconModule,
-  ],
+  declarations: [AppComponent, HomePageComponent, FooterComponent, HeaderComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatCardModule, MatIconModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

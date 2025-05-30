@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './core/home-page/home-page.component';
@@ -11,10 +12,19 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header/header.component';
+import { SignUpPageComponent } from './core/sign-up-page/sign-up-page.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, FooterComponent, HeaderComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatButtonModule, MatCardModule, MatIconModule],
+  declarations: [AppComponent, HomePageComponent, FooterComponent, HeaderComponent, SignUpPageComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    AppRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

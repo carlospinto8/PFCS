@@ -1,0 +1,21 @@
+.sign-up-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #151515;
+  color: #EAEAEA;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.sign-up-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 400px;
+  margin-bottom: 64px;
+  gap: 48px;
+}

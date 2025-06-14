@@ -4,7 +4,38 @@
   <!-- Main content area -->
   <main class="main-content">
     <!-- Sign-up section -->
-    <section class="hero-section">
+    <section class="sign-up-section">
+            <div class="sign-up-content">
+              <h1>Create Your Account</h1>
+              <mat-form-field>
+                <div class="generate-account-num-container">
+                  <mat-label>Generate Account Number</mat-label>
+                  <input matInput placeholder="Generate account number" [formControl]="generatedAccountNumControl" required>
+                  <button mat-raised-button>Generate</button>
+                  <button mat-raised-button>Copy</button>
+                  <mat-error *ngIf="generatedAccountNumControl.errors?.['required'] && generatedAccountNumControl.touched">
+                    Account Number is required.
+                  </mat-error>
+                </div>
+
+                <mat-label>Enter your password</mat-label>
+                <input matInput placeholder="Enter your password" [formControl]="enterPasswordControl" required>
+                <mat-error *ngIf="enterPasswordControl.errors?.['minlength']">Minimum 12 characters required.</mat-error>
+                <mat-error *ngIf="enterPasswordControl.errors?.['pattern']">Must include upper, lower, number, and symbol.</mat-error>
+                <mat-error *ngIf="enterPasswordControl.errors?.['required'] && enterPasswordControl.touched">
+                  Password is required.
+                </mat-error>
+
+
+                <mat-label>Confirm your password</mat-label>
+                <input matInput placeholder="Confirm your password" [formControl]="confirmPasswordControl" required>
+                <mat-error *ngIf="confirmPasswordControl.errors?.['minlength']"></mat-error>
+                <mat-error *ngIf="confirmPasswordControl.errors?.['pattern']">Must include upper, lower, number, and symbol.</mat-error>
+                <mat-error *ngIf="confirmPasswordControl.errors?.['required'] && confirmPasswordControl.touched">
+                  Password is required.
+                </mat-error>
+              </mat-form-field>
+      </div>
     </section>
   </main>
 </div>

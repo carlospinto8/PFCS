@@ -7,17 +7,21 @@
     <section class="sign-up-section">
             <div class="sign-up-content">
               <h1>Create Your Account</h1>
+               <div class="generate-account-num-container">
+                <div class="generate-acct-num-content">
               <mat-form-field>
-                <div class="generate-account-num-container">
                   <mat-label>Generate Account Number</mat-label>
-                  <input matInput placeholder="Generate account number" [formControl]="generatedAccountNumControl" required>
-                  <button mat-raised-button>Generate</button>
-                  <button mat-raised-button>Copy</button>
+                  <input matInput placeholder="Generate account number" [formControl]="generatedAccountNumControl" class="generate-input" required>
+
                   <mat-error *ngIf="generatedAccountNumControl.errors?.['required'] && generatedAccountNumControl.touched">
                     Account Number is required.
                   </mat-error>
-                </div>
-
+              </mat-form-field>
+              <button mat-raised-button class="generate-button">Generate</button>
+              <button mat-raised-button>Copy</button>
+            </div>
+              </div>
+              <mat-form-field>
                 <mat-label>Enter your password</mat-label>
                 <input matInput placeholder="Enter your password" [formControl]="enterPasswordControl" required>
                 <mat-error *ngIf="enterPasswordControl.errors?.['minlength']">Minimum 12 characters required.</mat-error>
@@ -25,8 +29,8 @@
                 <mat-error *ngIf="enterPasswordControl.errors?.['required'] && enterPasswordControl.touched">
                   Password is required.
                 </mat-error>
-
-
+              </mat-form-field>
+              <mat-form-field>
                 <mat-label>Confirm your password</mat-label>
                 <input matInput placeholder="Confirm your password" [formControl]="confirmPasswordControl" required>
                 <mat-error *ngIf="confirmPasswordControl.errors?.['minlength']"></mat-error>

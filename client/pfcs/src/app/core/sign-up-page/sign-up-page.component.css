@@ -18,4 +18,56 @@
   min-height: 400px;
   margin-bottom: 64px;
   gap: 48px;
+
+  .mat-mdc-form-field-infix {
+    width: 225px;
+  }
+
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #454547;
+  }
+
+  mat-label {
+    color:  #7f7f83;
+  }
+
+  .generate-button {
+    background-color: #FFB300;
+    color: #191919;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .generate-button:hover {
+    background-color: #fcc138;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(248, 211, 48, 0.3);
+  }
+
+  .generate-button:focus {
+    box-shadow: 0 8px 12px rgba(241, 232, 189, 0.3);
+  }
+}
+
+.sign-up-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+  margin: auto;
+  background-color: #2c2c2e;
+}
+
+.generate-account-num-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-direction: row;
 }

@@ -9,14 +9,15 @@
   overflow-x: hidden;
   background-color: #151515;
   color: #EAEAEA;
-    flex: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +28,6 @@
   flex-direction: row;
   align-items: center;
   min-height: 400px;
-  margin-bottom: 64px;
   gap: 48px;
 
   .mat-mdc-form-field-infix {
@@ -113,4 +113,35 @@
   gap: 0.5rem;
   align-items: center;
   flex-direction: row;
+}
+
+@media (max-width: 600px) {
+
+  /* Stack the big pieces */
+  .main-content       { padding: clamp(1rem, 4vw, 1.5rem); }
+  .sign-up-section    { flex-direction: column; gap: 32px; }
+
+  /* Sign-up card should fill the width nicely */
+  .sign-up-content    { max-width: none; }
+
+  /* Account-number generator row */
+  .generate-account-num-container,
+  .generate-acct-num-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .generate-acct-num-content > * { width: 100%; }
+
+  /* Touch-friendly buttons */
+  .generate-button,
+  .copy-button {
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 14px;      /* separates stacked buttons */
+  }
+
+  /* Give form fields breathing-room so label text doesn’t collide */
+  mat-form-field {
+    width: 100%;
+  }
 }

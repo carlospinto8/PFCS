@@ -16,9 +16,10 @@ import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header/header.component';
 import { SignUpPageComponent } from './core/sign-up-page/sign-up-page.component';
+import { LoginPageComponent } from './core/login-page/login-page.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, FooterComponent, HeaderComponent, SignUpPageComponent],
+  declarations: [AppComponent, HomePageComponent, FooterComponent, HeaderComponent, SignUpPageComponent, LoginPageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

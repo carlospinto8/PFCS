@@ -1,1 +1,48 @@
-<p>login-page works!</p>
+<div class="page-wrapper">
+<app-header></app-header>
+
+<div class="log-in-container">
+  <!-- Main content area -->
+  <main class="main-content">
+    <!-- Sign-up section -->
+    <section class="log-in-section">
+      <div class="log-in-content">
+        <div class="header-container">
+          <h1>Log In to Your Account</h1>
+        </div>
+
+        <mat-form-field>
+          <mat-label>Enter your account number</mat-label>
+          <input matInput placeholder="Enter your account number"
+            [formControl]="enterAccountNumControl" required>
+          <mat-error
+            *ngIf="enterAccountNumControl.errors?.['required'] && enterAccountNumControl.touched">
+            Account Number is required.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Enter your password</mat-label>
+          <input matInput placeholder="Enter your password"
+            [formControl]="enterPasswordControl" required>
+          <mat-error *ngIf="enterPasswordControl.errors?.['minlength']">Minimum
+            12 characters required.</mat-error>
+          <mat-error *ngIf="enterPasswordControl.errors?.['pattern']">Must
+            include upper, lower, number, and symbol.</mat-error>
+          <mat-error
+            *ngIf="enterPasswordControl.errors?.['required'] && enterPasswordControl.touched">
+            Password is required.
+          </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button class="login-button">Log in</button>
+        <div class="signup-now">
+          <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<app-footer></app-footer>
+</div>

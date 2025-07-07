@@ -17,9 +17,18 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header/header.component';
 import { SignUpPageComponent } from './core/sign-up-page/sign-up-page.component';
 import { LoginPageComponent } from './core/login-page/login-page.component';
+import { UserDashboardComponent } from './core/user-dashboard/user-dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, FooterComponent, HeaderComponent, SignUpPageComponent, LoginPageComponent],
+  declarations: [
+    AppComponent,
+    HomePageComponent,
+    FooterComponent,
+    HeaderComponent,
+    SignUpPageComponent,
+    LoginPageComponent,
+    UserDashboardComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

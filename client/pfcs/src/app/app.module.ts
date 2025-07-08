@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header/header.component';
 import { SignUpPageComponent } from './core/sign-up-page/sign-up-page.component';
@@ -38,6 +39,7 @@ import { UserDashboardComponent } from './core/user-dashboard/user-dashboard.com
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSidenavModule,
     AppRoutingModule,
     ReactiveFormsModule,
   ],

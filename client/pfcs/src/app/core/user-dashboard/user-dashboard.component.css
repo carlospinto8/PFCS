@@ -1,7 +1,11 @@
 .page-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
+}
+.sidenav-container {
+ --mat-sidenav-container-background-color: #2c2c2e !important;
+
 }
 
 .dashboard-container {

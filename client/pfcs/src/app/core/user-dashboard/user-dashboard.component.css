@@ -14,12 +14,10 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .sidenav-image-container {
-  flex: 1;
   height: 150px;
   width: 150px;
   border-radius: 8px;
@@ -27,6 +25,35 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+.sidenav-tab-container {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #EAEAEA;
+
+  width: 100%;
+
+  a:-webkit-any-link {
+    color: #EAEAEA;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 5px 0px;
+
+    mat-icon {
+      margin-right: 10px;
+      color: #EAEAEA;
+    }
   }
 }
 

@@ -29,7 +29,7 @@
 }
 
 .sidenav-tab-container {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -54,6 +54,35 @@
       margin-right: 10px;
       color: #EAEAEA;
     }
+  }
+}
+
+.sidenav-storage-amount-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #EAEAEA;
+
+  width: 100%;
+
+  .storage-amount-label-container {
+    display: flex;
+  }
+
+  .storage-amount-bar-container {
+    display: flex;
+    background-color: #454547;
+    width: 85%;
+    border-radius: 5px;
+  }
+
+  .storage-amount-bar {
+    height: 12px;
+    width: 0;
+    background-color: #ec1d9a;
+    border-radius: 5px;
   }
 }
 

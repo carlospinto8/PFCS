@@ -1,13 +1,15 @@
 <div class="page-wrapper">
 
-<div class="sidenav-container">
-  <div class="sidenav-image-container">
-    <img alt="Company logo depicting a purple cloud with a lock in the center of it" src="../../../assets/images/PFCS_Logo.png">
-  </div>
-  <div class="sidenav-tab-container">
-        <a href="#">
-          <mat-icon>file_present</mat-icon>  My Files
-        </a>
+  <div class="sidenav-container">
+    <div class="sidenav-image-container">
+      <img
+        alt="Company logo depicting a purple cloud with a lock in the center of it"
+        src="../../../assets/images/PFCS_Logo.png">
+    </div>
+    <div class="sidenav-tab-container">
+      <a href="#">
+        <mat-icon>file_present</mat-icon> My Files
+      </a>
       <a href="#">
         <mat-icon>upload</mat-icon> Upload
       </a>
@@ -15,17 +17,25 @@
         <mat-icon>star</mat-icon> Favorites
       </a>
       <a href="#">
-       <mat-icon>delete</mat-icon> Trash
+        <mat-icon>delete</mat-icon> Trash
       </a>
       <a href="#">
-      <mat-icon>lock</mat-icon> Vault
+        <mat-icon>lock</mat-icon> Vault
       </a>
+    </div>
+    <div class="sidenav-storage-amount-container">
+      <div class="storage-amount-label-container">
+        <div>{{ storageAmountInGB }} GB</div>
+        <div>/ 50 GB</div>
+      </div>
+      <div class="storage-amount-bar-container">
+        <div class="storage-amount-bar" [ngStyle]="{'width': storageAmountPercentage + '%'}"></div>
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="dashboard-container">
+  <div class="dashboard-container">
 
-</div>
-
+  </div>
 
 </div>
